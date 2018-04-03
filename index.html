@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Quotes </title>
+	<link rel="stylesheet" type="text/css" href="quotes.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js">
+	</script>
+</head>
+<body>
+	<section  class="quoi">
+<div class="container">
+	<h1>Random Quotes Generator</h1>
+<p>Life is a journey
+You are never dealt the hand you desire.
+You will come up against obstacles that are tough<br/>
+Questions that cannot be answered or
+A Relationships you will have problems in
+Your <br/>heart will beat, you will sweat
+You will cry your eyes out , and
+You will quit, <br/>and try again
+Everything obstacle you see in life is achievable
+you must overcome the obstacles that are in you.<br/>
+To overcome yourself is the key to
+Happiness. </p>
+<img src="back.jpg"/ width="262" height=262><br/>
+<button class="btn btn-default" type="submit">New Quotes</button>
+<div class="quotes">
+	<span class=quote>Hello</span>
+	<span class="author">&nbsp-World</span>
+	</div>
+</div>
+</section>
+<script>
+	$(document).ready(function()
+		{
+			function getquotes()
+			{
+ var quotes = ["Forward is Forward speed doesnt matters","The geatest enemy of knowledge is not ignosrance,it is the illusion of knowledge","work until your bank account looks like phone number","If you are are tired learn to rest not to quit","NOt everyone will understand you thats life","Most so called failure are only temprary defeat","Dont let anyone comfortable in rspecting you"];
+    
+  var author = [" -Sudhanshu"," -Stephen Hawking"," -Ravi Martolia"," -Suraj negi"," -Shubham Rawat"," -Nikky Kanwal"," -Sudhir joshi & Dheeraj joshi"];
+
+
+
+ var randnum = Math.floor((Math.random()*quotes.length));
+  var quotesnum=quotes[randnum];
+  var authornum=author[randnum];
+  $(".quote").text(quotesnum);
+  $(".author").text(authornum);
+   }
+
+$(".btn").on("click",function(){
+getquotes();
+});
+
+		});
+</script>>
+</body>
+</html>
